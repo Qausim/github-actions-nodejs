@@ -13,7 +13,6 @@ describe('Root route', () => {
         .get('/api/v1')
         .send();
 
-      console.log({res});
       expect(res).to.have.status(200);
       expect(res.body).to.have.property('message');
     });

@@ -40,7 +40,7 @@ app.use((error, request, response) => {
   Responses.internalServerError(response);
 });
 
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3000;
 const debug = debugHelper(getDebugger('app'));
 
 app.listen(PORT, () => debug.success(`Server running on PORT: ${PORT}`));
